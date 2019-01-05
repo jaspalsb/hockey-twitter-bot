@@ -94,7 +94,7 @@ def game_tweet(game_id, games_today):
             tweet_message = " The game has finished. The final score " + away_name + " " + away_goals + " to " + home_name + " " + home_goals + ". #" + hashtag[0]
         else:
             tweet_message = " The game is currently in the " + period + " period with " + game_time + " remaining. The current score is " + away_name + " " + away_goals + " to " + home_name + " " + home_goals + ". #" + hashtag[0]
-        return tweet_message
+    return tweet_message
 #creates a string of twitter hashtags for all the games to be played for that day.
 #The hashtags are in the format AWAY vs HOME 
 def schedule_tweet(games_today):
